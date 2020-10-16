@@ -93,7 +93,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/midRight"
         app:layout_constraintTop_toTopOf="@+id/top" />
-    
+
     <DigitalClock
         android:id="@+id/clock"
         android:layout_width="0dp"
