@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Smart Fridge</string>
+    <string name="shoppingListButton">Shopping List</string>
+    <string name="fridgeContentsButton">View Inside Your Fridge</string>
+    <string name="recipeButton">Recipes</string>
+    <string name="messagesButton">White Board and Messages</string>
+    <string name="controlCenterButton">Control Center</string>
+    <string name="photosButton">Photo Album</string>
+</resources>

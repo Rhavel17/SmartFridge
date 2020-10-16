@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/photosButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="displayPhotos"
+        android:text="@string/photosButton"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textSize="36sp"
+        app:backgroundTint="@color/photosButtonColor"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/midRight"
+        app:layout_constraintTop_toTopOf="@+id/midBot2" />
+
+    <Button
+        android:id="@+id/controlCenterButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="displayControlCenter"
+        android:text="@string/controlCenterButton"
+        android:textSize="36sp"
+        app:backgroundTint="@color/controlCenterButtonColor"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toStartOf="@+id/midLeft"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toTopOf="@+id/midBot2" />
+
+    <Button
+        android:id="@+id/messagesButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="displayMessages"
+        android:text="@string/messagesButton"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textSize="36sp"
+        app:backgroundTint="@color/messagesButtonColor"
+        app:layout_constraintBottom_toTopOf="@+id/midTop2"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="@+id/midRight"
+        app:layout_constraintTop_toTopOf="@+id/midBot1" />
+
+    <Button
+        android:id="@+id/recipeButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="displayRecipes"
+        android:text="@string/recipeButton"
+        android:textSize="36sp"
+        app:backgroundTint="@color/recipeButtonColor"
+        app:layout_constraintBottom_toTopOf="@+id/midTop2"
+        app:layout_constraintEnd_toStartOf="@+id/midLeft"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toTopOf="@+id/midBot1" />
+
+    <Button
+        android:id="@+id/shopListButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="displayShoppingList"
+        android:text="@string/shoppingListButton"
+        android:textSize="36sp"
+        app:backgroundTint="@color/shoppingListButtonColor"
+        app:layout_constraintBottom_toTopOf="@+id/midTop1"
+        app:layout_constraintEnd_toStartOf="@+id/midLeft"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/left"
+        app:layout_constraintTop_toTopOf="@+id/top" />
+
+    <Button
+        android:id="@+id/fridgeContentsButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="displayFridgeContents"
+        android:text="@string/fridgeContentsButton"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textSize="36sp"
+        app:backgroundTint="@color/fridgeContentsButtonColor"
+        app:layout_constraintBottom_toTopOf="@+id/midTop1"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/midRight"
+        app:layout_constraintTop_toTopOf="@+id/top" />
+    
+    <DigitalClock
+        android:id="@+id/clock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/timeBot"
+        app:layout_constraintEnd_toStartOf="@+id/timeRight"
+        app:layout_constraintStart_toStartOf="@+id/timeLeft"
+        app:layout_constraintTop_toTopOf="@+id/timeTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midTop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midBot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midTop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midBot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/timeTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/timeBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/timeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/timeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+</androidx.constraintlayout.widget.ConstraintLayout>
