@@ -1,8 +1,10 @@
-package com.example.smartfridge;
+package com.example.smartfridge.recipes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.smartfridge.R;
 
 public class RecipesActivity extends AppCompatActivity {
 

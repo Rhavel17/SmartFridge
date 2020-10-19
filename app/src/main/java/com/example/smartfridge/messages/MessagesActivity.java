@@ -1,14 +1,16 @@
-package com.example.smartfridge;
+package com.example.smartfridge.messages;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PhotosActivity extends AppCompatActivity {
+import com.example.smartfridge.R;
+
+public class MessagesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_photos);
+        setContentView(R.layout.activity_messages);
     }
 }

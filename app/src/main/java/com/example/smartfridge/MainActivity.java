@@ -6,6 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.smartfridge.controlcenter.ControlCenterActivity;
+import com.example.smartfridge.fridgecontents.FridgeContentsActivity;
+import com.example.smartfridge.messages.MessagesActivity;
+import com.example.smartfridge.photos.PhotosActivity;
+import com.example.smartfridge.recipes.RecipesActivity;
+import com.example.smartfridge.shoppinglist.ShoppingListActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
