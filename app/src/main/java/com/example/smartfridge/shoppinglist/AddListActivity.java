@@ -33,7 +33,6 @@ public class AddListActivity extends AppCompatActivity {
         //Get the current date
         c = Calendar.getInstance();
         currentDate = (c.get(Calendar.MONTH) + 1) + "/" + c.get(Calendar.DAY_OF_MONTH) + "/" + c.get(Calendar.YEAR);
-
     }
 
     /** Replaces the default app menu (action bar) with res/menu/add_lists_menu */

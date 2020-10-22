@@ -7,7 +7,10 @@
     <string name="controlCenterButton">Control Center</string>
     <string name="photosButton">Photo Album</string>
     <string name="add_shopping_list_icon">Add</string>
-    <string name="add_food">Add Food to Fridge</string>
+    <string name="add_food">Add Food and Related Details to Fridge</string>
     <string name="quick_food_add">Quick Add</string>
     <string name="curr_food_inside">See Foods Inside</string>
+    <string name="your_foods">Your Food:</string>
+    <string name="quickAdd">Quick Add Food</string>
+    <string name="save">Save</string>
 </resources>
