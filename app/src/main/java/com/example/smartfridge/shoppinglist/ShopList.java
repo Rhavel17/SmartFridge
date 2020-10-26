@@ -52,4 +52,6 @@ public class ShopList {
     public boolean equals(ShopList list) {
         return list.ID.equals(this.ID);
     }
+
+    public boolean hasSameId(String id) { return id.equals(this.ID); }
 }

@@ -64,4 +64,45 @@ public class ShoppingListActivity extends AppCompatActivity {
 
         return false;
     }
+
+    //Search through ArrayList of shopping lists and return ShopList with matching ID
+    protected static ShopList findListById(String id) {
+        for(ShopList currList : lists) {
+            if(currList.getID().equals(id)) {
+                return currList;
+            }
+        }
+
+        //This method should never have to return null
+        //Only searching for ShopList objects with an ID that we know exists within the ArrayList
+        return null;
+    }
+
+    //Removes ShopList with specified ID from ArrayList<ShopList>
+    protected static boolean removeById(String id) {
+        for(int i = 0; i < lists.size(); i++) {
+            if(lists.get(i).hasSameId(id)) {
+                lists.remove(i);
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    //Update specified shopping list while maintaining original ID
+    protected static boolean updateList(String id, String title, String content, String date) {
+        for(int i = 0; i < lists.size(); i++) {
+            if(lists.get(i).hasSameId(id)) {
+                lists.get(i).setTitle(title);
+                lists.get(i).setContent(content);
+                lists.get(i).setDate(date);
+
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

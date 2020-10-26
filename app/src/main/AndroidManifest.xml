@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartFridge">
-        <activity android:name=".fridgecontents.QuickAddActivity"
+        <activity android:name=".shoppinglist.EditListActivity"></activity>
+        <activity
+            android:name=".shoppinglist.ViewListActivity"
+            android:parentActivityName=".shoppinglist.ShoppingListActivity" />
+        <activity
+            android:name=".fridgecontents.QuickAddActivity"
             android:parentActivityName=".fridgecontents.FridgeContentsActivity" />
-
-        <activity android:name=".fridgecontents.SeeInsideActivity"
+        <activity
+            android:name=".fridgecontents.SeeInsideActivity"
             android:parentActivityName=".fridgecontents.FridgeContentsActivity" />
-
-        <activity android:name=".fridgecontents.AddFoodInsideActivity"
+        <activity
+            android:name=".fridgecontents.AddFoodInsideActivity"
             android:parentActivityName=".fridgecontents.FridgeContentsActivity" />
         <activity
             android:name=".shoppinglist.AddListActivity"
@@ -38,7 +43,6 @@
         <activity
             android:name=".shoppinglist.ShoppingListActivity"
             android:parentActivityName=".MainActivity" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

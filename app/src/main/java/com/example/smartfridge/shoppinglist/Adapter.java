@@ -1,6 +1,7 @@
 package com.example.smartfridge.shoppinglist;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,6 +59,20 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             super(itemView);
             title = itemView.findViewById(R.id.titleOfList);
             date = itemView.findViewById(R.id.dateOfList);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                //This method is run when user clicks on an existing
+                // shopping list (i.e. cardview element w/in RecyclerView in ShoppingListActivity.java)
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(view.getContext(), ViewListActivity.class);
+
+                    //Add ID of the shopping list that the user clicked on to the Intent
+                    i.putExtra("ID", lists.get(getAdapterPosition()).getID());
+
+                    view.getContext().startActivity(i);
+                }
+            });
         }
     }
 }
