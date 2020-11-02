@@ -25,35 +25,68 @@
         android:background="@drawable/border"
         app:layout_constraintBottom_toTopOf="@+id/bot_border"
         app:layout_constraintEnd_toStartOf="@+id/right_border"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/left_border"
-        app:layout_constraintTop_toTopOf="@+id/top_border">
+        app:layout_constraintTop_toTopOf="@+id/top_border"
+        app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/textLockDoor"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+        <EditText
+            android:id="@+id/textSetTime"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
             android:background="@drawable/border"
-            android:gravity="center_vertical"
-            android:paddingLeft="32dp"
-            android:text="Lock Door"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textAdjustTime"
+            app:layout_constraintEnd_toEndOf="@+id/textAdjustTime"
+            app:layout_constraintTop_toTopOf="@+id/textAdjustTime" />
+
+        <EditText
+            android:id="@+id/textSetDate"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/border"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textAdjustDate"
+            app:layout_constraintEnd_toEndOf="@+id/textAdjustDate"
+            app:layout_constraintTop_toTopOf="@+id/textAdjustDate" />
+
+        <Spinner
+            android:id="@+id/pickerFridgeTemp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/border"
+            android:entries="@array/fridgeTemps"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textFridgeTemp"
+            app:layout_constraintEnd_toEndOf="@+id/textFridgeTemp"
+            app:layout_constraintTop_toTopOf="@+id/textFridgeTemp" />
+
+        <Spinner
+            android:id="@+id/pickerFreezeTemp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/border"
+            android:entries="@array/freezeTemps"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textFreezeTemp"
+            app:layout_constraintEnd_toEndOf="@+id/textFreezeTemp"
+            app:layout_constraintTop_toTopOf="@+id/textFreezeTemp" />
 
         <Spinner
             android:id="@+id/toggleButton"
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
             android:background="@drawable/border"
             android:entries="@array/LockDoor"
             android:spinnerMode="dropdown"
             android:text="ToggleButton"
+            android:textAlignment="center"
             android:textOff="DISABLED"
             android:textOn="ENABLED"
             app:layout_constraintBottom_toBottomOf="@+id/textLockDoor"
@@ -61,9 +94,26 @@
             app:layout_constraintTop_toTopOf="@+id/textLockDoor" />
 
         <TextView
+            android:id="@+id/textFreezeTemp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:text="Freezer Temperature"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <TextView
             android:id="@+id/textFridgeTemp"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="0dp"
             android:layout_marginEnd="32dp"
             android:layout_marginStart="32dp"
             android:background="@drawable/border"
@@ -72,9 +122,105 @@
             android:text="Fridge Temperature"
             android:textColor="#000000"
             android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textLockDoor" />
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/textAdjustTime"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:text="Adjust Time"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+        <TextView
+            android:id="@+id/textLockDoor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:text="Lock Door"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/textAdjustDate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:text="Adjust Date"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.24" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

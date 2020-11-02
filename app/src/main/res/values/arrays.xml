@@ -4,4 +4,37 @@
         <item>ENABLED</item>
         <item>DISABLED</item>
     </string-array>
+
+    <string-array name="fridgeTemps">
+        <item>32F</item>
+        <item>33F</item>
+        <item>34F</item>
+        <item>35F</item>
+        <item>36F</item>
+        <item>37F</item>
+        <item>38F</item>
+        <item>39F</item>
+        <item>40F</item>
+        <item>41F</item>
+        <item>42F</item>
+        <item>43F</item>
+        <item>44F</item>
+        <item>45F</item>
+    </string-array>
+
+    <string-array name="freezeTemps">
+        <item>-2F</item>
+        <item>-1F</item>
+        <item>0F</item>
+        <item>1F</item>
+        <item>2F</item>
+        <item>3F</item>
+        <item>4F</item>
+        <item>5F</item>
+        <item>6F</item>
+        <item>7F</item>
+        <item>8F</item>
+        <item>9F</item>
+        <item>10F</item>
+    </string-array>
 </resources>
