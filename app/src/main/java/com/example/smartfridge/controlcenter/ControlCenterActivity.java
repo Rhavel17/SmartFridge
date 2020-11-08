@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.NumberPicker;
+import android.widget.Spinner;
 import android.widget.TimePicker;
 
 import com.example.smartfridge.R;
@@ -21,6 +22,7 @@ public class ControlCenterActivity extends AppCompatActivity {
     EditText time, date;
     TimePickerDialog picker;
     DatePickerDialog datePicker;
+    Spinner freezeSpin, fridgeSpin;
     int hour, min, day, month, year;
 
     @Override
@@ -30,6 +32,15 @@ public class ControlCenterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control_center);
 
+        //Set default value for Freezer Temp
+        freezeSpin = (Spinner) findViewById(R.id.pickerFreezeTemp);
+        freezeSpin.setSelection(7); //Sets default value of spinner to element of index 7 in array (5 F)
+
+        //Set default value for Fridge Temp
+        fridgeSpin = (Spinner) findViewById(R.id.pickerFridgeTemp);
+        fridgeSpin.setSelection(4); //Sets default value of spinner to element of index 4 in array (36 F)
+
+        //Assign time and date values to respective EditTexts
         initializeTime();
         initializeDate();
     }
