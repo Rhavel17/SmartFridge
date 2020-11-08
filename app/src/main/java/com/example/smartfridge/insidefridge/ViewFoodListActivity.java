@@ -30,7 +30,7 @@ public class ViewFoodListActivity extends AppCompatActivity {
 
         //Update various parts of this activity with values from the selected shopping list
         getSupportActionBar().setTitle(foodList.getTitle());
-        listContent.setText(foodList.getAmount());
+        listContent.setText(foodList.getAmount().toString());
         listContent.setMovementMethod(new ScrollingMovementMethod());
     }
 

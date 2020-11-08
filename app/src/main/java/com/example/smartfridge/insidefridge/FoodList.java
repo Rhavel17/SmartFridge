@@ -50,7 +50,7 @@ public class FoodList {
         this.date = date;
     }
 
-    public boolean equals(com.example.smartfridge.insidefridge.FoodList list) {
+    public boolean equals(FoodList list) {
         return list.ID.equals(this.ID);
     }
 

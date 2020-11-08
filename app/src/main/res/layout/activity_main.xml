@@ -30,7 +30,7 @@
         android:fontFamily="sans-serif-medium"
         android:onClick="displayControlCenter"
         android:text="@string/controlCenterButton"
-        android:textSize="36sp"
+        android:textSize="32sp"
         app:backgroundTint="@color/controlCenterButtonColor"
         app:layout_constraintBottom_toTopOf="@+id/bottom"
         app:layout_constraintEnd_toStartOf="@+id/midLeft"

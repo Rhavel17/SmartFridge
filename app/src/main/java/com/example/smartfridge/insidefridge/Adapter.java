@@ -68,7 +68,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                     Intent i = new Intent(view.getContext(), ViewFoodListActivity.class);
 
                     //Add ID of the shopping list that the user clicked on to the Intent
-                    i.putExtra("Id", lists.get(getAdapterPosition()).getID());
+                    i.putExtra("ID", lists.get(getAdapterPosition()).getID());
 
                     view.getContext().startActivity(i);
                 }
