@@ -1,30 +1,36 @@
-package com.example.smartfridge.shoppinglist;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-
-import com.example.smartfridge.R;
-
-import java.util.ArrayList;
+package com.example.smartfridge.insidefridge;
 
 
-public class ShoppingListActivity extends AppCompatActivity {
+
+        import androidx.annotation.NonNull;
+        import androidx.appcompat.app.AppCompatActivity;
+        import androidx.recyclerview.widget.LinearLayoutManager;
+        import androidx.recyclerview.widget.RecyclerView;
+
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.view.Menu;
+        import android.view.MenuInflater;
+        import android.view.MenuItem;
+        import android.widget.ArrayAdapter;
+        import android.widget.LinearLayout;
+
+        import com.example.smartfridge.R;
+        import com.example.smartfridge.shoppinglist.AddListActivity;
+        import com.example.smartfridge.shoppinglist.ShopList;
+
+        import java.util.ArrayList;
+
+
+public class FoodListActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    public static ArrayList<ShopList> lists = new ArrayList<ShopList>();
+    public static ArrayList<FoodList> lists = new ArrayList<FoodList>();
     public Adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shopping_list);
+        setContentView(R.layout.activity_food_list);
 
         //Link the UI RecyclerView component with local variable
         recyclerView = findViewById(R.id.foodLists);
@@ -53,7 +59,7 @@ public class ShoppingListActivity extends AppCompatActivity {
         super.onOptionsItemSelected(item);
 
         if(item.getItemId() == R.id.add) {
-            Intent intent = new Intent(this, AddListActivity.class);
+            Intent intent = new Intent(this, AddFoodActivity.class);
             startActivity(intent);
             return true;
         }
@@ -62,8 +68,8 @@ public class ShoppingListActivity extends AppCompatActivity {
     }
 
     //Search through ArrayList of shopping lists and return ShopList with matching ID
-    protected static ShopList findListById(String id) {
-        for(ShopList currList : lists) {
+    protected static FoodList findListById(String id) {
+        for(FoodList currList : lists) {
             if(currList.getID().equals(id)) {
                 return currList;
             }
@@ -88,11 +94,11 @@ public class ShoppingListActivity extends AppCompatActivity {
     }
 
     //Update specified shopping list while maintaining original ID
-    protected static boolean updateList(String id, String title, String content, String date) {
+    protected static boolean updateList(String id, String title, int amount, String date) {
         for(int i = 0; i < lists.size(); i++) {
             if(lists.get(i).hasSameId(id)) {
                 lists.get(i).setTitle(title);
-                lists.get(i).setContent(content);
+                lists.get(i).setAmount(amount);
                 lists.get(i).setDate(date);
 
                 return true;

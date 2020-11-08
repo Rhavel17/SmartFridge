@@ -9,10 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartFridge">
-        <activity android:name=".shoppinglist.EditListActivity"></activity>
+
+
+        <activity android:name=".shoppinglist.EditListActivity" />
         <activity
             android:name=".shoppinglist.ViewListActivity"
             android:parentActivityName=".shoppinglist.ShoppingListActivity" />
+        <activity
+            android:name=".insidefridge.ViewFoodListActivity"
+            android:parentActivityName=".insidefridge.FoodListActivity" />
+        <activity
+            android:name=".insidefridge.AddFoodActivity"
+            android:parentActivityName=".insidefridge.FoodListActivity" />
+        <activity android:name=".insidefridge.EditFoodActivity" />
+        <activity
+            android:name=".insidefridge.FoodListActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".fridgecontents.QuickAddActivity"
             android:parentActivityName=".fridgecontents.FridgeContentsActivity" />
@@ -34,9 +46,23 @@
         <activity
             android:name=".messages.MessagesActivity"
             android:parentActivityName=".MainActivity" />
+
+       <!--RECIPES STUFF -->
         <activity
             android:name=".recipes.RecipesActivity"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".recipes.pbj_recipe"
+            android:parentActivityName=".recipes.RecipesActivity" />
+        <activity android:name=".recipes.cookie_recipe"
+            android:parentActivityName=".recipes.RecipesActivity"></activity>
+        <activity
+            android:name=".recipes.fries_recipe"
+            android:parentActivityName=".recipes.RecipesActivity"/>
+        <activity
+            android:name=".recipes.lasagna_recipe"
+            android:parentActivityName=".recipes.RecipesActivity"/>
+
         <activity
             android:name=".fridgecontents.FridgeContentsActivity"
             android:parentActivityName=".MainActivity" />

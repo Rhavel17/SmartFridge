@@ -1,25 +1,88 @@
 <resources>
     <string name="app_name">Smart Fridge</string>
     <string name="shoppingListButton">Shopping List</string>
-    <string name="fridgeContentsButton">View Inside Your Fridge</string>
+    <string name="fridgeContentsButton">Inside Fridge</string>
     <string name="recipeButton">Recipes</string>
-    <string name="messagesButton">White Board and Messages</string>
+    <string name="messagesButton">Sticky Notes</string>
     <string name="controlCenterButton">Control Center</string>
     <string name="photosButton">Photo Album</string>
     <string name="add_shopping_list_icon">Add</string>
-    <string name="add_food">Add Food and Related Details to Fridge</string>
+    <string name="add_food">Add Food </string>
     <string name="quick_food_add">Quick Add</string>
     <string name="curr_food_inside">See Foods Inside</string>
     <string name="your_foods">Your Food:</string>
     <string name="quickAdd">Quick Add Food</string>
     <string name="save">Save</string>
     <string name="title_activity_display_list">DisplayListActivity</string>
+    <string name="pbj"> Peanut Butter and Jelly Sandwich </string>
+    <string name="cookie"> Snickerdoodle Cookies</string>
+    <string name="grilledCheese"> Grilled Cheese</string>
+    <string name="fries"> French Fries</string>
+    <string name="ingredient">Ingredients</string>
+    <string name="directions">Directions</string>
+    <string name="servingSize">Serving Size: </string>
+    <string name="cookTime">Cook Time: </string>
+    <string name="prepTime">Prep Time: </string>
+    <string name="bullet">• </string>
+    <string name="shortening">1 cup soft shortening</string>
+    <string name="sugar">1 &amp; 1/3 cup granulated sugar</string>
+    <string name="egg">2 eggs</string>
+    <string name="floar"> 2 &amp; 3/4 cup sifted flour</string>
+    <string name="tartar">2 teaspoons cream of tartar</string>
+    <string name="bakingSoda"> 1 teaspoon baking soda</string>
+    <string name="salt"> 1/2 teaspoon salt</string>
+    <string name="cinnom">2 teaspoons cinnamon</string>
+    <string name="preheat">Preheat oven to 400 degrees</string>
+    <string name="cookie1">1. Mix together shortening, 1.5 cup sugar, and eggs</string>
+    <string name="cookie2">2. Sift together and stir in flour, cream of tartar, baking soda, and salt </string>
+    <string name="cookie3">3. Mix thoroughly</string>
+    <string name="cookie4">4. Roll dough into small walnut sized balls and place aside</string>
+    <string name="cookie5">5. In medium bowl mix together 2 tablespoons granulated sugar and 2 tablespoons cinnamon</string>
+    <string name="cookie6">6. Roll balls of dough in cinnamon sugar mixture</string>
+    <string name="cookie7">7. Place cookies 2 inches apart on ungreased baking sheet</string>
+    <string name="cookie8">8. Bake exactly 8 minutes </string>
+    <string name="cookieAmount">20-25 small cookies</string>
+    <string name="intCookTime">8 minutes</string>
+    <string name="intPrepTime">15-20 minutes</string>
+    <string name="pb">2 tablespoons peanut butter</string>
+    <string name="jenny">2 tablespoons jelly</string>
+    <string name="bread">2 slices of bread</string>
+    <string name="pbj1">1. Spread the peanut butter on one piece of bread</string>
+    <string name="pbj2">2. Spread the jelly on the other piece of bread</string>
+    <string name="pbj3">3. Put the two pieces of bread together to form a sandwich</string>
+    <string name="pbServing">1 sandwich</string>
+    <string name="pbPrep">5 minutes</string>
+    <string name="pbCook">0 minutes</string>
+    <string name="friesServing">2 servings</string>
+    <string name="friesPrep">80 minutes</string>
+    <string name="friesCook">20 minutes</string>
+    <string name="potato">3 potatoes</string>
+    <string name="salt2">salt</string>
+    <string name="oil">vegetable or canola oil</string>
+    <string name="fries1">1. Peel and rinse the potatoes</string>
+    <string name="fries2">2. Cut potatoes into 1/2 inch thick slices</string>
+    <string name="fries3">3. Place slices into large bowl with cold water for at least an hour</string>
+    <string name="fries4">4. Drain water and dry potatoes with paper towel</string>
+    <string name="fries5">5. Add a few inches of oil in a pot and heat to 300 degrees</string>
+    <string name="fries6">6. In batches, place potatoes in oil and fry for about 7-10 minutes or until golden and crispy</string>
+    <string name="fries7">7. Remove fries from oil, place on paper towel to drain any access oil and sprinkle with salt, to taste</string>
+    <string name="cheeses">2 slices cheese of choice</string>
+    <string name="butter">2 tablespoons butter</string>
+    <string name="cheese1">1. Spread 1/2 tablespoon butter on each slice of bread</string>
+    <string name="cheese2">2. Place both slices of bread, butter side down, on a hot skillet for 2 minutes</string>
+    <string name="cheese3">3. Remove bread and add remaining butter to skillet</string>
+    <string name="cheese4">4. Place 1 slice of bread, butter side up, back on skillet. Add cheese to bread and place second slide of bread on top</string>
+    <string name="cheese5">5. After 2-3 minutes carefully flip sandwich. Repeat if necessary until both sides are golden brown</string>
+    <string name="cheeseCook">10 minutes</string>
+
+
+
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

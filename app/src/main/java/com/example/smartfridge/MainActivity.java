@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.smartfridge.controlcenter.ControlCenterActivity;
 import com.example.smartfridge.fridgecontents.FridgeContentsActivity;
+import com.example.smartfridge.insidefridge.FoodListActivity;
 import com.example.smartfridge.messages.MessagesActivity;
 import com.example.smartfridge.photos.PhotosActivity;
 import com.example.smartfridge.recipes.RecipesActivity;
@@ -30,10 +31,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+//    /** Called when the user clicks on the view fridge contents button from the home screen */
+//    public void displayFridgeContents(View view) {
+//        //Binds this Activity (Home screen) to another Activity (Fridge Contents Screen)
+//        Intent intent = new Intent(this, FridgeContentsActivity.class);
+//
+//        //Launches the Fridge Contents Screen
+//        startActivity(intent);
+//    }
+
     /** Called when the user clicks on the view fridge contents button from the home screen */
-    public void displayFridgeContents(View view) {
+    public void displayInsideFridge(View view) {
         //Binds this Activity (Home screen) to another Activity (Fridge Contents Screen)
-        Intent intent = new Intent(this, FridgeContentsActivity.class);
+        Intent intent = new Intent(this, FoodListActivity.class);
 
         //Launches the Fridge Contents Screen
         startActivity(intent);
@@ -47,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         //Launches the Recipes Screen
         startActivity(intent);
     }
+
+
 
     /** Called when the user clicks on the messages button from the home screen */
     public void displayMessages(View view) {

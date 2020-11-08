@@ -4,15 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FF9800"
     tools:context=".recipes.RecipesActivity">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="161dp"
-        android:layout_height="54dp"
+        android:layout_width="804dp"
+        android:layout_height="85dp"
+        android:gravity="center"
         android:text="@string/recipeButton"
         android:textColor="#000000"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PBJ"
+        android:layout_width="604dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="@color/photosButtonColor"
+        android:onClick="displayPBJ"
+        android:text="@string/pbj"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/lasagna"
+        android:layout_width="604dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/messagesButtonColor"
+        android:onClick="displayLasagna"
+        android:text="@string/grilledCheese"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PBJ" />
+
+    <Button
+        android:id="@+id/fries"
+        android:layout_width="604dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/photosButtonColor"
+        android:onClick="displayFries"
+        android:text="@string/fries"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lasagna" />
+
+    <Button
+        android:id="@+id/cookie"
+        android:layout_width="604dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/messagesButtonColor"
+        android:onClick="displayCookie"
+        android:text="@string/cookie"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fries" />
+
+    <EditText
+        android:id="@+id/searchRecipes"
+        android:layout_width="604dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="45dp"
+        android:clickable="true"
+        android:drawableLeft="?android:attr/actionModeWebSearchDrawable"
+        android:ems="10"
+        android:hint="Search Recipes"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
