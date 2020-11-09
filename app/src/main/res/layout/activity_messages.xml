@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="308dp"
-        android:layout_height="96dp"
-        android:text="@string/messagesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sticky Notes (Under Development)"
         android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
